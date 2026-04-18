@@ -75,7 +75,7 @@ public class AgentOrchestrationService {
         }
 
         TaskStatus status = request.requireHumanApproval() ? TaskStatus.WAITING_FOR_APPROVAL : TaskStatus.COMPLETED;
-        String summary = status == TaskStatus.WAITING_FOR_APPROVAL()
+        String summary = status == TaskStatus.WAITING_FOR_APPROVAL
                 ? "Agent prepared the workflow and is waiting for human approval before risky external actions."
                 : "Agent completed the workflow with deterministic local tools.";
 
