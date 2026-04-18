@@ -1,0 +1,10 @@
+{
+  "goal": "Qualify a CRM lead and prepare a calendar follow-up",
+  "context": "Lead is interested in an automation project and asked for pricing.",
+  "allowedTools": [
+    "crm.lookup",
+    "calendar.propose_slots",
+    "notification.draft_email"
+  ],
+  "requireHumanApproval": true
+}
